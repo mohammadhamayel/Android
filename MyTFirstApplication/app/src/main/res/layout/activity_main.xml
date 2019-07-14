@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/screen_background_light"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editTextFirstNum"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="Enter The First Number"
+        android:inputType="number"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="#00EEE7E7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextSecondNum"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="Enter The Second Number"
+        android:inputType="number"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="#00E9E0E0"
+        android:textColorLink="#00DACFCF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFirstNum"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="66dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:drawable/ic_input_add"
+        android:text="+"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="#00160606"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSecondNum"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonSub"
+        android:layout_width="66dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:drawable/button_onoff_indicator_on"
+        android:text="ــــــ"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorHighlight="#000C0000"
+        app:layout_constraintStart_toEndOf="@+id/buttonAdd"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSecondNum"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonMult"
+        android:layout_width="66dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:drawable/presence_invisible"
+        android:text="*"
+        android:textColor="#020000"
+        app:layout_constraintStart_toEndOf="@+id/buttonSub"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSecondNum"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonDiv"
+        android:layout_width="66dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="80dp"
+        android:background="@android:drawable/checkbox_off_background"
+        android:text="/"
+        android:textColor="#000000"
+        app:layout_constraintStart_toEndOf="@+id/buttonMult"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSecondNum"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/TextViewResult"
+        android:layout_width="128dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginRight="108dp"
+        android:background="@android:drawable/ic_notification_overlay"
+        android:text="Result"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMult"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="58dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#03A9F4"
+        android:text="Result:"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/TextViewResult"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSub"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
